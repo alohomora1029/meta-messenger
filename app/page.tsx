@@ -13,7 +13,7 @@ async function Homepage() {
     <> 
     <main>
       <MessegeList initialMessages = {messages}/>
-      <ChatInput session={session}/>
+      <ChatInput />
     </main>
     </>
   )
