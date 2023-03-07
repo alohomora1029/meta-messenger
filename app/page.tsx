@@ -4,7 +4,7 @@ import MessegeList from './MessageList'
 
 
 async function Homepage() {
-  const data = await fetch(`${process.env.VERCEL_URL || 'http://localhost:3000'}/api/getMessages`).then((res) => res.json());
+  const data = await fetch(`${process.env.NEXTAUTH_URL || 'http://localhost:3000'}/api/getMessages`).then((res) => res.json());
   const messages :Message[] = data.messages;
   
   return (
